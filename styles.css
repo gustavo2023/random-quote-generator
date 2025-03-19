@@ -113,6 +113,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0.5rem;
   gap: 2rem;
 }
 
@@ -121,11 +122,15 @@ main {
     url("./resources/bg-image-random-quote.png") no-repeat center center/cover;
   border-radius: 0.5rem;
   padding: 2rem;
-  width: 100%;
-  max-width: 480px;
+  max-width: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 447px 304px 151px 0px rgba(0, 0, 0, 0),
+    286px 195px 138px 0px rgba(0, 0, 0, 0.01),
+    161px 110px 117px 0px rgba(0, 0, 0, 0.05),
+    72px 49px 87px 0px rgba(0, 0, 0, 0.09),
+    18px 12px 48px 0px rgba(0, 0, 0, 0.1);
 }
 
 .author {
@@ -170,4 +175,5 @@ button {
   gap: 0.5rem;
   padding: 0.6rem 0.8rem;
   border-radius: 0.8rem;
+  cursor: pointer;
 }
