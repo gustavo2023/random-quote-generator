@@ -1,0 +1,173 @@
+/* Start CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: inherit;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+html {
+  text-size-adjust: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* End CSS Reset */
+
+/* Start Global Styles */
+
+:root {
+  /* Colors */
+  --body-bg-color: #111629;
+  --text-color: #e3e8ef;
+  --tags-color: #aeb0ff;
+  --container-color: #20293a;
+
+  /* Typography */
+  --large-text-size: 1.5rem;
+  --medium-text-size: 1rem;
+  --small-text-size: 0.625rem;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.container {
+  background: var(--container-color)
+    url("./resources/bg-image-random-quote.png") no-repeat center center/cover;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.author {
+  font-size: var(--medium-text-size);
+  color: var(--text-color);
+  margin-bottom: 0.7rem;
+}
+
+.tags-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  color: var(--tags-color);
+  font-size: var(--small-text-size);
+  border: 1px solid var(--tags-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+}
+
+.quote {
+  color: var(--text-color);
+  font-size: var(--large-text-size);
+  text-align: center;
+  text-wrap: wrap;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  background-color: var(--container-color);
+  color: var(--text-color);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.8rem;
+}
